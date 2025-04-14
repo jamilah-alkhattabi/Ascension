@@ -6,30 +6,46 @@
   <title>Ascension Building Services</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
-      background-color: #f7f9fc;
+      background-color: #E5DCD7;
+      color: #1a4547;
+      line-height: 1.6;
     }
 
     header.hero {
-      background-color: #4b6cb7;
-      color: white;
-      padding: 60px 20px;
+      background-color: #F7D67F;
+      color: #1a4547;
+      padding: 80px 20px;
       text-align: center;
     }
 
+    header.hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header.hero p {
+      font-size: 1.2em;
+      font-style: italic;
+      color: #1a4547;
+    }
+
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       max-width: 900px;
       margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     section h2 {
-      color: #4b6cb7;
+      color: #EFA99C;
       margin-bottom: 20px;
+      font-size: 2em;
     }
 
     ul {
@@ -39,6 +55,19 @@
 
     ul li {
       margin-bottom: 10px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #98BBC0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>

@@ -4,52 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ascension Building Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #1a4547;
+      --gold: #F7D67F;
+      --coral: #EFA99C;
+      --cream: #EEDFBB;
+      --light-teal: #98BBC0;
+      --warm-grey: #E5DCD7;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Playfair Display', serif;
       margin: 0;
-      padding: 0;
-      background-color: #E5DCD7;
-      color: #1a4547;
-      line-height: 1.6;
+      background-color: var(--warm-grey);
+      color: var(--primary);
     }
 
-    header.hero {
-      background-color: #F7D67F;
-      color: #1a4547;
-      padding: 80px 20px;
+    header {
+      background: var(--gold);
       text-align: center;
+      padding: 80px 20px;
     }
 
-    header.hero h1 {
+    header h1 {
       font-size: 3em;
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
 
-    header.hero p {
-      font-size: 1.2em;
+    header p {
+      font-size: 1.25em;
+      color: var(--primary);
       font-style: italic;
-      color: #1a4547;
     }
 
     section {
-      padding: 50px 20px;
-      max-width: 900px;
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: 0 auto;
-      background-color: #ffffff;
-      border-radius: 10px;
-      margin-bottom: 30px;
+    }
+
+    .highlight {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: var(--coral);
+      margin-top: 0;
+      font-size: 2em;
+      border-left: 5px solid var(--coral);
+      padding-left: 15px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: var(--cream);
+      border-radius: 8px;
+      padding: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
-    section h2 {
-      color: #EFA99C;
-      margin-bottom: 20px;
-      font-size: 2em;
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
     }
 
     ul {
-      list-style: disc;
       padding-left: 20px;
     }
 
@@ -57,69 +87,82 @@
       margin-bottom: 10px;
     }
 
+    .contact {
+      background-color: var(--light-teal);
+      color: #fff;
+      border-radius: 12px;
+    }
+
+    .contact h2 {
+      color: #fff;
+      border-left-color: #fff;
+    }
+
     .contact p {
-      margin: 8px 0;
+      margin: 10px 0;
+      font-size: 1.1em;
     }
 
-    a {
-      color: #98BBC0;
-      text-decoration: none;
-    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
 
-    a:hover {
-      text-decoration: underline;
+      h2 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1>Ascension Building Services</h1>
     <p>We're here to help you rise, thrive, and succeed.</p>
   </header>
 
-  <section class="about">
+  <section class="highlight">
     <h2>About Us</h2>
     <p>Ascension Building Services LLC (ABS) is a business consulting firm committed to empowering underserved organizations. Founded by Aja Tsige, a neurodivergent CEO, ABS helps minority-owned and non-English-speaking businesses thrive through strategic guidance and community-driven support.</p>
   </section>
 
-  <section class="mission">
+  <section class="highlight">
     <h2>Who We Are</h2>
     <p>To empower underserved, minority-owned, and neurodivergent-led businesses with the resources and guidance needed for sustainable growth and community impact.</p>
     <p>To create a scalable, digital-first consultancy that drives economic empowerment and supports growth in underserved communities.</p>
   </section>
 
-  <section class="services">
+  <section class="highlight">
     <h2>Our Services</h2>
-    <ul>
-      <li>Strategic Planning & Business Development</li>
-      <li>Business Coaching and Consulting</li>
-      <li>Minority Certification Assistance</li>
-      <li>Technology & Training Services</li>
-      <li>Contract Management Training</li>
-      <li>Project Management & Construction Services</li>
-      <li>Financial & Legal Services</li>
-      <li>Process Review and Mapping</li>
-      <li>Procedure Manual Development</li>
-      <li>Community & Social Services</li>
-      <li>Government Procurement & Contract Consulting</li>
-    </ul>
+    <div class="services-grid">
+      <div class="card"><h3>Strategic Planning</h3><p>Business development strategies for long-term growth.</p></div>
+      <div class="card"><h3>Coaching & Consulting</h3><p>Guidance tailored to minority and neurodivergent leaders.</p></div>
+      <div class="card"><h3>Certification Assistance</h3><p>Help with obtaining minority certifications.</p></div>
+      <div class="card"><h3>Tech & Training</h3><p>Digital tools, workshops, and training programs.</p></div>
+      <div class="card"><h3>Contract Management</h3><p>Training to manage public or private contracts efficiently.</p></div>
+      <div class="card"><h3>Construction Services</h3><p>Support for project and construction management.</p></div>
+      <div class="card"><h3>Financial & Legal</h3><p>Access to financial planning and legal partnerships.</p></div>
+      <div class="card"><h3>Process Mapping</h3><p>Analyze and improve internal workflows.</p></div>
+      <div class="card"><h3>Manuals</h3><p>Create clear and compliant procedure documents.</p></div>
+      <div class="card"><h3>Community Services</h3><p>Support programs for underserved groups.</p></div>
+      <div class="card"><h3>Govt. Procurement</h3><p>Expertise in navigating government contracts.</p></div>
+    </div>
   </section>
 
-  <section class="why-abs">
+  <section class="highlight">
     <h2>Why Choose ABS?</h2>
     <ul>
-      <li><strong>Inclusive & Community-Focused:</strong> We specialize in serving minority, immigrant, women, and veteran-owned businesses.</li>
-      <li><strong>Holistic Approach:</strong> We address challenges across people, processes, technology, and metrics.</li>
-      <li><strong>Technology-Driven:</strong> We leverage digital solutions for greater accessibility and efficiency.</li>
+      <li><strong>Inclusive & Community-Focused:</strong> Serving minority, immigrant, women, and veteran-owned businesses.</li>
+      <li><strong>Holistic Approach:</strong> Tackling people, processes, tech, and metrics together.</li>
+      <li><strong>Technology-Driven:</strong> Smart digital tools for efficient growth.</li>
     </ul>
   </section>
 
-  <section class="contact">
+  <section class="highlight contact">
     <h2>Contact Us</h2>
-    <p>Have a Question or Idea? We’re Here to Listen!</p>
-    <p>Phone: [Add phone number]</p>
-    <p>Email: [Add email]</p>
-    <p>Social: [Add social media links]</p>
+    <p>Have a question or idea? We’re here to listen!</p>
+    <p><strong>Phone:</strong> [Add phone number]</p>
+    <p><strong>Email:</strong> [Add email]</p>
+    <p><strong>Social:</strong> [Add social links]</p>
   </section>
 </body>
 </html>

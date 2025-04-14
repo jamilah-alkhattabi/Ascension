@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ascension Building Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f7f9fc;
+    }
+
+    header.hero {
+      background-color: #4b6cb7;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      color: #4b6cb7;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Ascension Building Services</h1>
+    <p>We're here to help you rise, thrive, and succeed.</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Ascension Building Services LLC (ABS) is a business consulting firm committed to empowering underserved organizations. Founded by Aja Tsige, a neurodivergent CEO, ABS helps minority-owned and non-English-speaking businesses thrive through strategic guidance and community-driven support.</p>
+  </section>
+
+  <section class="mission">
+    <h2>Who We Are</h2>
+    <p>To empower underserved, minority-owned, and neurodivergent-led businesses with the resources and guidance needed for sustainable growth and community impact.</p>
+    <p>To create a scalable, digital-first consultancy that drives economic empowerment and supports growth in underserved communities.</p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Strategic Planning & Business Development</li>
+      <li>Business Coaching and Consulting</li>
+      <li>Minority Certification Assistance</li>
+      <li>Technology & Training Services</li>
+      <li>Contract Management Training</li>
+      <li>Project Management & Construction Services</li>
+      <li>Financial & Legal Services</li>
+      <li>Process Review and Mapping</li>
+      <li>Procedure Manual Development</li>
+      <li>Community & Social Services</li>
+      <li>Government Procurement & Contract Consulting</li>
+    </ul>
+  </section>
+
+  <section class="why-abs">
+    <h2>Why Choose ABS?</h2>
+    <ul>
+      <li><strong>Inclusive & Community-Focused:</strong> We specialize in serving minority, immigrant, women, and veteran-owned businesses.</li>
+      <li><strong>Holistic Approach:</strong> We address challenges across people, processes, technology, and metrics.</li>
+      <li><strong>Technology-Driven:</strong> We leverage digital solutions for greater accessibility and efficiency.</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Have a Question or Idea? We’re Here to Listen!</p>
+    <p>Phone: [Add phone number]</p>
+    <p>Email: [Add email]</p>
+    <p>Social: [Add social media links]</p>
+  </section>
+</body>
+</html>

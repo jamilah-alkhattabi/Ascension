@@ -2,167 +2,189 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ascension Building Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --primary: #1a4547;
-      --gold: #F7D67F;
-      --coral: #EFA99C;
-      --cream: #EEDFBB;
-      --light-teal: #98BBC0;
-      --warm-grey: #E5DCD7;
-    }
-
     body {
-      font-family: 'Playfair Display', serif;
       margin: 0;
-      background-color: var(--warm-grey);
-      color: var(--primary);
+      font-family: 'Lato', sans-serif;
+      background-color: #fdf6ee;
+      color: #194547;
+      font-size: 20px;
     }
-
-    header {
-      background: var(--gold);
-      text-align: center;
-      padding: 80px 20px;
+    nav {
+      background-color: #eedfbb;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 22px;
     }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0 0 10px;
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
     }
-
-    header p {
-      font-size: 1.25em;
-      color: var(--primary);
-      font-style: italic;
+    nav a {
+      text-decoration: none;
+      color: #194547;
+      font-weight: bold;
     }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: 0 auto;
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 4rem 2rem;
+      background-color: #fdf6ee;
     }
-
-    .highlight {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 40px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
-      margin-bottom: 40px;
+    .hero-text {
+      flex: 1;
+      padding: 2rem;
     }
-
-    h2 {
-      color: var(--coral);
-      margin-top: 0;
-      font-size: 2em;
-      border-left: 5px solid var(--coral);
-      padding-left: 15px;
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #194547;
     }
-
-    .services-grid {
+    .hero-text p {
+      font-size: 1.4rem;
+      color: #476c6d;
+    }
+    .hero-image {
+      flex: 1;
+      padding: 2rem;
+    }
+    .hero-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .grid-section {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
     }
-
     .card {
-      background-color: var(--cream);
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 2rem;
+      border-radius: 12px;
+      color: #194547;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
     .card h3 {
       margin-top: 0;
-      color: var(--primary);
     }
+    .bg-yellow { background-color: #eedfbb; }
+    .bg-teal { background-color: #97b9bf; }
+    .bg-salmon { background-color: #efa99c; }
+    .bg-peach { background-color: #f4cb87; }
 
-    ul {
-      padding-left: 20px;
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
     }
-
-    ul li {
-      margin-bottom: 10px;
+    .about-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      flex: 1;
     }
-
-    .contact {
-      background-color: var(--light-teal);
-      color: #fff;
-      border-radius: 12px;
+    .about-text {
+      flex: 1;
     }
-
-    .contact h2 {
-      color: #fff;
-      border-left-color: #fff;
+    .about-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
-
-    .contact p {
-      margin: 10px 0;
-      font-size: 1.1em;
+    .about-text p {
+      font-size: 1.2rem;
+      color: #476c6d;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-
-      h2 {
-        font-size: 1.5em;
-      }
+    .btn {
+      background-color: #efa99c;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #194547;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #eedfbb;
+      font-size: 1rem;
+      color: #194547;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ascension Building Services</h1>
-    <p>We're here to help you rise, thrive, and succeed.</p>
-  </header>
+  <nav>
+    <ul>
+      <li><strong>Ascension Building Services</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section class="highlight">
-    <h2>About Us</h2>
-    <p>Ascension Building Services LLC (ABS) is a business consulting firm committed to empowering underserved organizations. Founded by Aja Tsige, a neurodivergent CEO, ABS helps minority-owned and non-English-speaking businesses thrive through strategic guidance and community-driven support.</p>
-  </section>
-
-  <section class="highlight">
-    <h2>Who We Are</h2>
-    <p>To empower underserved, minority-owned, and neurodivergent-led businesses with the resources and guidance needed for sustainable growth and community impact.</p>
-    <p>To create a scalable, digital-first consultancy that drives economic empowerment and supports growth in underserved communities.</p>
-  </section>
-
-  <section class="highlight">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="card"><h3>Strategic Planning</h3><p>Business development strategies for long-term growth.</p></div>
-      <div class="card"><h3>Coaching & Consulting</h3><p>Guidance tailored to minority and neurodivergent leaders.</p></div>
-      <div class="card"><h3>Certification Assistance</h3><p>Help with obtaining minority certifications.</p></div>
-      <div class="card"><h3>Tech & Training</h3><p>Digital tools, workshops, and training programs.</p></div>
-      <div class="card"><h3>Contract Management</h3><p>Training to manage public or private contracts efficiently.</p></div>
-      <div class="card"><h3>Construction Services</h3><p>Support for project and construction management.</p></div>
-      <div class="card"><h3>Financial & Legal</h3><p>Access to financial planning and legal partnerships.</p></div>
-      <div class="card"><h3>Process Mapping</h3><p>Analyze and improve internal workflows.</p></div>
-      <div class="card"><h3>Manuals</h3><p>Create clear and compliant procedure documents.</p></div>
-      <div class="card"><h3>Community Services</h3><p>Support programs for underserved groups.</p></div>
-      <div class="card"><h3>Govt. Procurement</h3><p>Expertise in navigating government contracts.</p></div>
+  <section class="grid-section">
+    <div class="card bg-yellow">
+      <h3>Inclusive Business Development</h3>
+      <p>Support for minority-owned, neurodivergent, and multilingual entrepreneurs to structure and grow sustainable businesses.</p>
+    </div>
+    <div class="card bg-teal">
+      <h3>Sustainable and Green Trade Training</h3>
+      <p>Programs in CNC machining, fabrication, and green practices for a climate-conscious workforce.</p>
+    </div>
+    <div class="card bg-salmon">
+      <h3>Grant Writing & Funding Access</h3>
+      <p>Navigate public and private funding channels with expert grant writing and capital access strategies.</p>
+    </div>
+    <div class="card bg-peach">
+      <h3>Digital Program Development</h3>
+      <p>Create inclusive learning platforms using VR, multilingual support, and self-paced tools for all learners.</p>
+    </div>
+    <div class="card bg-teal">
+      <h3>Workforce Training & Community Empowerment</h3>
+      <p>Inclusive training ecosystems that uplift underrepresented communities through employment-ready pathways.</p>
+    </div>
+    <div class="card bg-salmon">
+      <h3>Operational Efficiency & Growth</h3>
+      <p>Streamline internal systems, scale responsibly, and align with values-driven business goals.</p>
     </div>
   </section>
 
-  <section class="highlight">
-    <h2>Why Choose ABS?</h2>
-    <ul>
-      <li><strong>Inclusive & Community-Focused:</strong> Serving minority, immigrant, women, and veteran-owned businesses.</li>
-      <li><strong>Holistic Approach:</strong> Tackling people, processes, tech, and metrics together.</li>
-      <li><strong>Technology-Driven:</strong> Smart digital tools for efficient growth.</li>
-    </ul>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Empowering Underserved Businesses and Communities</h1>
+      <p>Providing both high-impact solutions and equity-focused development across industries.</p>
+    </div>
+    <div class="hero-image">
+      <img src="https://source.unsplash.com/600x400/?team,diverse,training" alt="Team Collaboration" />
+    </div>
   </section>
 
-  <section class="highlight contact">
-    <h2>Contact Us</h2>
-    <p>Have a question or idea? We’re here to listen!</p>
-    <p><strong>Phone:</strong> [Add phone number]</p>
-    <p><strong>Email:</strong> [Add email]</p>
-    <p><strong>Social:</strong> [Add social links]</p>
+  <section class="about-section">
+    <div class="about-text">
+      <h2>About Ascension Building Services</h2>
+      <p>Ascension is a mission-driven consultancy focused on inclusive growth, sustainability, and equity. We collaborate with entrepreneurs, nonprofits, and institutions to build stronger communities through accessible strategies and intentional partnerships.</p>
+      <button class="btn">Learn More</button>
+    </div>
+    <img src="https://source.unsplash.com/600x400/?office,community" alt="Office Collaboration" />
   </section>
+
+  <footer>
+    &copy; 2025 Ascension Building Services | <a href="mailto:info@ascensionbuildingsvcs.com">info@ascensionbuildingsvcs.com</a>
+  </footer>
 </body>
 </html>
